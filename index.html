@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Comparador • HTML + JS</title>
+	<meta name="description" content="Comparativas con filtros, buscador y ordenación." />
+	<link rel="stylesheet" href="styles.css">
+	<script src="app.js" defer></script>
+</head>
+<body>
+	<header class="app-header">
+		<div class="brand">
+			<div class="logo">C</div>
+			<div class="brand-text">
+				<h1>Compare this</h1>
+				<p> Compara productos para encontrar el mejor calidad-precio</p>
+			</div>
+		</div>
+
+		<div class="actions">
+			<input id="searchInput" type="search" placeholder="Buscar comparativas..." />
+			<select id="sortSelect">
+				<option value="recientes">Más recientes</option>
+				<option value="populares">Más populares</option>
+				<option value="alfabetico">A-Z</option>
+			</select>
+		</div>
+	</header>
+
+	<section class="filters" id="filters"></section>
+
+	<main class="container">
+		<div id="grid" class="grid"></div>
+		<p id="emptyState" class="empty" hidden>No hay resultados. Prueba a cambiar los filtros o el término de búsqueda.</p>
+	</main>
+
+	<!-- Modal -->
+	<div id="modal" class="modal" aria-hidden="true">
+		<div class="modal-backdrop" data-close></div>
+		<div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+			<button class="modal-close" data-close aria-label="Cerrar">✕</button>
+			<img id="modalHero" class="modal-hero" alt="" />
+			<div class="modal-body">
+				<div class="modal-main">
+					<h2 id="modalTitle"></h2>
+					<div class="meta">
+						<span class="badge" id="modalCategory"></span>
+						<span id="modalDate"></span>
+					</div>
+					<p id="modalSummary" class="summary"></p>
+                </div> 
+			</div>
+		</div>
+	</div>
+	<footer class="app-footer">
+		© <span id="year"></span> · Di-boy. Esta web puede contener enlaces de afiliado.
+	</footer>
+</body>
+</html>
