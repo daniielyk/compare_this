@@ -10,6 +10,16 @@ const COMPARATIVAS = [
 		link: "zapas.html"
 	},
 
+	{
+		id: "cmp-pantalones-2025",
+		title: "Pantalones de deporte",
+		category: "ropa",
+		lastUpdated: "21-08-2025",
+		summary: "Comparativa de pantalones de deporte ...",
+		heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLpgthjSS7OPNN0d67DGXJnuv6aI3l_v8pg&s",
+		link: "pantsdep.html"
+	},
+
 ];
 
 // Categorías
